@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Java Tokens - RapidTutor</title>
+
+    <meta name="Keywords" content="Java,programming,tutorial,rapidtutor,examples,tutor,rapid,learn,syntax,token,keyword,identifier,operator,instanceof,separator,literal,escape,sequence">
+
+    <meta name="Description" content="Tokens are the smallest program element meaningful to the compiler,Token include- Keywords, Identifiers,Operators,Seperators,Literals.Java has 50 reserve keywords.Identifiers are the names given to the variables,Operators are symbols used to perform arithmetic or logical operation">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  *****************  icon ******************* -->
+
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <!-- ******************* font ********* -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!-- **************  pretty-print *********** -->
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=java&amp;skin=sons-of-obsidian"></script>
+
+    <!-- ******************   sheets ************** -->
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+
+
+
+</head>
+
+<body>
+    <!--SIDE-NAV-->
+    <div class="side-nav" id="side-id">
+
+        <div class="side-head">Java Tutorial</div>
+        <div class="side-content">
+            <a href="./java.html">Java-About</a>
+            <a href="./java-features.html">Java-Features</a>
+            <a href="./Oop-features.html">Java-Oop features</a>
+            <a href="./java-setup-environment.html">Java-Set up environment</a>
+            <a href="./simple-java-code.html">Java-A simple java code</a>
+            <a href="./java-program-structure.html">Java-Program Structure</a>
+            <a href="./java-public-static-void-main.html">Java-public static void main()</a>
+            <a href="./system.out.println-explained.html">Java-System.out.println()</a>
+            <a href="./java-tokens.html" id="active">Java-Tokens</a>
+            <a href="./java-data-types.html">Java-Data Types</a>
+            <a href="./java-variables-and-classification.html">Java-Variables &amp; classification</a>
+            <a href="./java-naming-convention.html">Java-Naming Convention</a>
+            <a href="./java-type-casting.html">Java-Type Casting</a>
+
+            <div class="menu-head">Branching Statements</div>
+            <a href="./java-if-statement.html">Java- if Statement</a>
+            <a href="./java-if-else-statement.html">Java- if-else</a>
+            <a href="./java-nested-if-else.html">Java- nested if-else</a>
+            <a href="./java-else-if-ladder.html">Java- else-if ladder</a>
+            <a href="./java-switch-statement.html">Java- switch statement</a>
+            <a href="./java-ternary-operator.html">Java- Ternary Operator</a>
+
+            <div class="menu-head">Loop Statements</div>
+            <a href="./java-while-loop.html">Java- while loop</a>
+            <a href="./java-do-while.html">Java- do-while </a>
+            <a href="./java-for-loop.html">Java- for loop</a>
+            <a href="./java-nested-for-loop.html">Java- Nested for </a>
+            <a href="./java-enhanced-for-loop.html">Java- Enhanced for loop</a>
+            <a href="./java-break-and-continue-statement.html">Java- break &amp; continue</a>
+            <a href="./java-labeled-loops.html">Java- labeled loop</a>
+
+            <div class="menu-head">Array</div>
+            <a href="./java-arrays.html">Java- 1D array</a>
+            <a href="./java-two-dimensional-array.html">Java- 2D array</a>
+            <a href="./java-multi-dimensional-array.html">Java- Multi-Dimensional array</a>
+            <a href="./java-array-length.html">Java- Array Length Variable</a>
+            <a href="./java-arraylist.html">Java- Array List</a>
+            <a href="./java-vectors.html">Java- Vector</a>
+
+            <div class="menu-head">String Handling</div>
+            <a href="./java-strings.html">Java- Strings</a>
+            <a href="./java-String-Buffer.html">Java- String Buffer</a>
+            <a href="./java-string-builder.html">Java- String Builder</a>
+            <a href="./java-length-method.html">Java- String length()</a>
+            <a href="./java-string-handling-methods.html">Java- String Handling Methods</a>
+            <hr>
+            <hr>
+            <a href="./java-wrapper-classes.html">Java- Wrapper Classes</a>
+            <a href="./java-enumerated-type.html">Java- Enumerated Type</a>
+
+            <div class="menu-head">User Inputs</div>
+            <a href="./java-scanner-class.html">Java- Scanner class</a>
+            <a href="./java-buffered-reader.html">Java- BufferedReader class</a>
+            <a href="./java-data-input-stream.html">Java- DataInputStream class</a>
+
+            <div class="menu-head">class, object &amp; methods</div>
+            <a href="./java-what-is-class.html">Java- what is class</a>
+            <a href="./java-what-is-object.html">Java- what is object</a>
+            <a href="./java-constructors.html">Java- what is Constructor</a>
+            <a href="./java-parameterized-constructor.html">Java- Parameterized Constructor</a>
+            <a href="./java-constructor-overloading.html">Java- Constructor Overloading</a>
+            <a href="./java-what-is-method.html">Java- what is method</a>
+            <a href="./java-passing-object-to-method.html">Java- Passing Object to Method</a>
+            <a href="./java-method-overloading.html">Java- Method Overloading</a>
+            <a href="./java-recursion-of-methods.html">Java- Recursion of methods</a>
+            <a href="./java-nesting-of-methods.html">Java- Nesting of Methods</a>
+            <a href="./java-call-by-value.html">Java- Call by value</a>
+            <a href="./java-call-by-reference.html">Java- Call by Reference</a>
+            <a href="./java-static-class-members.html">Java- Static Class members</a>
+            <a href="./java-inner-class.html">Java- Inner Class</a>
+
+            <div class="menu-head">Inheritance</div>
+            <a href="./java-inheritance-basics.html">Java- Inheritance Basics</a>
+            <a href="./java-super-keyword.html">Java- Super Keyword</a>
+            <a href="./java-method-overriding.html">Java- Method Overriding</a>
+            <a href="./java-final-keyword.html">Java- Final Keyword</a>
+            <a href="./java-abstract-method-classes.html">Java- Abstract Method &amp; Class</a>
+            <a href="./java-access-specifier.html">Java- Access Specifier</a>
+
+            <div class="menu-head">Package &amp; Interface</div>
+            <a href="./java-package-basics.html">Java- Package Basics</a>
+            <a href="./java-importing-package.html">Java- Importing Packages</a>
+            <a href="./java-interface-basics.html">Java- Interface Basics</a>
+            <a href="./java-implementing-and-extending-interfaces.html">Java- implementing &amp; extending interfaces</a>
+
+            <div class="menu-head">Multi-Threading</div>
+            <a href="./java-what-is-thread.html">Java- What is Thread &#63;</a>
+            <a href="./java-creating-threads.html">Java- Creating Threads</a>
+            <a href="./java-thread-priority-and-synchronization.html">Java- Thread Priority &amp; Synchronization</a>
+
+            <div class="menu-head">Exception Handling</div>
+            <a href="./java-fundamentals-of-exception.html">Java- Fundamentals of Exception</a>
+            <a href="./java-try-catch-block.html">Java- Using Try &amp; Catch Block</a>
+            <a href="./java-multiple-catch-blocks.html">Java- Multiple Catch Blocks</a>
+            <a href="./java-nested-try-block.html">Java- Nested Try Blocks</a>
+            <a href="./java-throw-throws-finally-keyword.html">Java- Throw,Throws &amp; Finally</a>
+            <a href="./java-creating-exception-sub-class.html">Java- Creating Exception Sub class</a>
+
+        </div>
+
+    </div>
+    <!--OPAQUE-->
+    <div class="opaque" id="opaque-id" onclick="opaqueClick()"></div>
+
+
+    <!--TOP-NAV-FIXED-->
+    <div class="top-nav">
+        <div class="top-item" id="bars" onclick="barClick()" title="Menu"><i class="fas fa-bars"></i></div>
+        <a class="top-item" href="../index.html" title="Home">Home</a>
+        <a class="top-item" href="./java.html" title="Java Programming">Java Programming</a>
+
+        <!--
+        <div class="dropdown top-item"><span>Menu</span> <i class="fas fa-caret-down"></i>
+            <div class="drop-content">
+                <a href="#">Java</a>
+                <a href="#">Python</a>
+                <a href="#">C++</a>
+                <a href="#">C</a>
+            </div>
+        </div>
+-->
+    </div>
+
+    <!--MAIN-WRAPPER-->
+    <div class="main-wrapper">
+
+
+        <!--HEADER-->
+        <div class="header"><span style="color: #3b5998;">Rapid</span><span style="color:  #e60000">Tutor</span><span>.org</span></div>
+
+
+
+
+        <!--WRAPPER-->
+        <div class="wrapper">
+
+
+            <!--MAIN-->
+
+            <div class="main">
+                <br>
+                <h1>Java Tokens:</h1>
+                <p>Java <span class="coral">Tokens</span> are the smallest program element meaningful to the compiler.</p>
+                <p>Token includes - Keywords, Identifiers, Operators, Seperators, Literals.</p>
+                <br>
+                <h3>Keywords:</h3>
+                <p>Java has 50 reserve <span class="coral">keywords</span> which can not be used as names for variables, methods and classes.</p>
+                <br>
+                <img src="../images/java-keywords.png" alt="keywords" width="500">
+                <br><br>
+
+                <h3>Identifiers:</h3>
+                <p class="wall"><span class="coral">Identifiers</span> are the names given to the variables, methods and classes by the programmer.</p>
+                <p>There are few rules for naming the Identifiers.</p>
+                <br>
+                <h4>Rule:</h4>
+                <p class="wall">1. They must not begin with digits. <br>
+                    2. They can contain alphabets, digits, underscore and dollar signs.</p>
+                <h4>Ex.</h4>
+                <pre class="output">    int number=10;</pre>
+                <p>Here <span class="coral">number</span> is an identifier.</p>
+                <br><br>
+                <h3>Operators:</h3>
+
+                <p class="wall"><span class="coral">Operators</span> are symbols used to perform some sort of arithmetic or logical operations on the data or variables in the program.</p>
+                <br>
+                <h4>i) Arithmetic Operators:</h4>
+                <p>The arithmetic operators are </p>
+                <pre class="code">
+   <span class="coral">+</span>   Addition or Unary Plus
+   <span class="coral">-</span>   Subtraction or Unary minus
+   <span class="coral">*</span>   Multiplication
+   <span class="coral">/</span>   Division
+   <span class="coral">%</span>   Modulo Division Operator </pre>
+                <br>
+
+                <h4>ii) Relational Operators:</h4>
+                <p>Relational operator returns either <span class="coral">true</span> or <span class="coral">false</span> based on the two operands along the two sides of the operator.</p>
+                <pre class="code">
+ <span class="coral">&lt;</span>     Less than
+ <span class="coral">&lt;=</span>    Less than or equal to
+ <span class="coral">&gt;</span>     Greater than
+ <span class="coral">&gt;=</span>    Greater than or equal to 
+ <span class="coral">==</span>    Equals to
+ <span class="coral">!=</span>    Not equals to</pre>
+                <br>
+                <h4>iii) Logical Operators:</h4>
+                <p><span class="coral">Logical</span> operators are used to perform logical <span class="coral">AND , OR &amp; NOT</span> operation between multiple conditions.</p>
+                <pre class="code">
+ <span class="coral">&amp;&amp;</span>   Logical AND
+ <span class="coral">&#124;&#124;</span>   Logical OR
+ <span class="coral">&#33;</span>    Logical NOT</pre>
+                <br>
+                <h4>iv) Assignment Operator:</h4>
+                <p><span class="coral">Assignment</span> operator assigns the right side value to the left side variable. Generally the right side maybe a literal or another vaiable but the left side always has to be a variable.</p>
+                <pre class="code">
+    a=10;
+    b+=10; </pre>
+                <br>
+                <h4>v) Increment and Decrement Operator:</h4>
+                <p>This operator used to increment or decrement a variable by one.</p>
+                <pre class=" code ">
+ a++;     //same as  a=a+1;
+ b=++a;   //it increments first then assign to b
+ a--;     //same as  a=a-1;
+ b=--a;   //it decrements first then assign to b</pre>
+                <br>
+                <h4>vi) Conditional Operator:</h4>
+                <p>Conditional Operator also called <span class="coral">ternary</span> operator used to evaluate between two values based on a given condtion.</p>
+                <pre class="code">
+    (condition)? exp1:exp2; </pre>
+                <p>If condition is <span class="coral">true</span>
+                    then returns the value of exp1 but if the condition is <span class="coral">false</span> then returns the value of exp2.</p>
+                <br>
+                <h4>vii) Bitwise Operator:</h4>
+                <p>Bitwise operator used for manipulation of data at bit level.</p>
+                <pre class="code">
+   <span class="coral">~</span>     bitwise one's complement
+   <span class="coral">&amp;</span>     bitwise AND
+   <span class="coral">&#124;</span>     bitwise OR
+   <span class="coral">^</span>     bitwise XOR
+   <span class="coral">&lt;&lt;</span>    Left shift
+   <span class="coral">&gt;&gt;</span>    right shift
+   <span class="coral">&gt;&gt;&gt;</span>   right shift with zero fill
+   <span class="coral">&amp;=</span>    AND Assignment
+   <span class="coral">&#124;=</span>    OR Assignment
+   <span class="coral">^=</span>    XOR Assignment
+   <span class="coral">&gt;&gt;=</span>   shift right Assignment
+   <span class="coral">&gt;&gt;&gt;=</span>  shift right zero fill Assignment
+   <span class="coral">&lt;&lt;=</span>   shift left Assignment </pre>
+
+
+                <br>
+
+                <h4>viii) Other Operators:</h4>
+                <br><br>
+                <h3><span class="coral">Instanceof:</span></h3>
+                <p>This operator used to find whether an object is instance of a particular class or not. It returns either <span class="coral">true</span> or <span class="coral">false</span>.</p>
+                <pre class="code">
+   dog instanceof Animal; </pre>
+                <p>This statement returns true if dog is instance of Animal class.</p>
+                <br>
+                <h3><span class="coral">Dot Operator:</span></h3>
+                <p> This operator used to access instance variables and subpackages.</p>
+
+                <br>
+                <br>
+
+                <h3>Separators:</h3>
+                <br>
+                <p class="wall"><span class="coral">Separators</span> are symbols used to structure and arrange the code.</p>
+                <pre class="code">
+    ()      parentheses
+    {}      braces or curly brackets
+    []      brackets or square brackets
+    ;       semicolons
+    ,       comma
+    .       period  </pre>
+
+                <br>
+
+                <h3>Literals:</h3>
+                <p class="wall"><span class="coral">Literals</span> are fancy name given to the constants in java.</p>
+                <pre class="code">
+  <span class="coral">10, 20, -100</span>         Integer Literals
+  <span class="coral">10.5 , 0.34 ,-2.5</span>    Floating Literals
+  <span class="coral">'a','b','10'</span>         Character Literals
+  <span class="coral">"java","2019"</span>        String Literals
+  <span class="coral">true or false</span>        Boolean Literals
+  <span class="coral">null;</span>                Null Literal</pre>
+                <br>
+                <h3>Java Escape Sequences:</h3>
+                <br>
+                <p class="wall">Java Escape Sequences are sequence of characters which is often used inside output methods to shape the output or print some special characters.</p>
+                <br>
+                <pre class="code">
+    <span class="coral">\'</span>               Single quote
+    <span class="coral">\"</span>               Double quote
+    <span class="coral">\\</span>               single Backslash
+    <span class="coral">\r</span>               Carriage return
+    <span class="coral">\n</span>               New line 
+    <span class="coral">\f</span>               Form feed
+    <span class="coral">\t</span>               Tab
+    <span class="coral">\b</span>               Backspace </pre>
+
+
+                <br><br>
+
+
+
+
+
+
+                <div class="next-prev">
+
+                    <a href="./system.out.println-explained.html" class="f-left">prev</a>
+                    <a href="./java-data-types.html" class="f-right">next</a>
+                </div>
+
+                <div class="main-bottom">
+                </div>
+
+            </div>
+
+
+
+            <!--RIGHT-SIDE-->
+            <div class="right-side">Right Side</div>
+        </div>
+
+        <!--FOOTER-->
+        <div class="footer" style="position: relative;">
+
+            <div class="f1">
+                <a href="https://www.facebook.com/RapidTutor-106765660738888/" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/rapid_tutor" title="twitter"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCosYCHGwVdMLOQmmuXKxNgQ?view_as=subscriber" title="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="f2">
+                <a href="../index.html" title="Home">Home</a> |
+                <a href="../about/about.html" title="About">about</a> |
+                <a href="../contact/contact.html" title="Contact">contact</a> |
+                <a href="../privacy_policy/privacy_policy.html" title="privacy policy">privacy policy</a> |
+                <a href="../Terms_Of_Use/terms_of_use.html" title="terms of use">terms of use</a>
+            </div>
+            <div class="f3">
+                &copy; Copyright 2019 | rapidtutor.org | All Rights Reserved
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body></html>

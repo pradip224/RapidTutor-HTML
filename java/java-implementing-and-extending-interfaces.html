@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Java Implementing &amp; Extending Interfaces,Default Methods - RapidTutor</title>
+
+    <meta name="Keywords" content="Java,programming,tutorial,rapidtutor,examples,tutor,rapid,learn,syntax,interfaces,implementing,extending,default,method,static">
+
+    <meta name="Description" content="Interfaces used for multiple inheritance in java,implements keyword is used to implement the interfaces.In java, we can't extend more than one class but can implement many interfaces along side the class extension.An interface can extend an already existing interface by the extends keyword.">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  *****************  icon ******************* -->
+
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <!-- ******************* font ********* -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!-- **************  pretty-print *********** -->
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=java&amp;skin=sons-of-obsidian"></script>
+
+    <!-- ******************   sheets ************** -->
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+
+
+
+</head>
+
+<body>
+    <!--SIDE-NAV-->
+    <div class="side-nav" id="side-id">
+
+        <div class="side-head">Java Tutorial</div>
+        <div class="side-content">
+            <a href="./java.html">Java-About</a>
+            <a href="./java-features.html">Java-Features</a>
+            <a href="./Oop-features.html">Java-Oop features</a>
+            <a href="./java-setup-environment.html">Java-Set up environment</a>
+            <a href="./simple-java-code.html">Java-A simple java code</a>
+            <a href="./java-program-structure.html">Java-Program Structure</a>
+            <a href="./java-public-static-void-main.html">Java-public static void main()</a>
+            <a href="./system.out.println-explained.html">Java-System.out.println()</a>
+            <a href="./java-tokens.html">Java-Tokens</a>
+            <a href="./java-data-types.html">Java-Data Types</a>
+            <a href="./java-variables-and-classification.html">Java-Variables &amp; classification</a>
+            <a href="./java-naming-convention.html">Java-Naming Convention</a>
+            <a href="./java-type-casting.html">Java-Type Casting</a>
+
+            <div class="menu-head">Branching Statements</div>
+            <a href="./java-if-statement.html">Java- if Statement</a>
+            <a href="./java-if-else-statement.html">Java- if-else</a>
+            <a href="./java-nested-if-else.html">Java- nested if-else</a>
+            <a href="./java-else-if-ladder.html">Java- else-if ladder</a>
+            <a href="./java-switch-statement.html">Java- switch statement</a>
+            <a href="./java-ternary-operator.html">Java- Ternary Operator</a>
+
+            <div class="menu-head">Loop Statements</div>
+            <a href="./java-while-loop.html">Java- while loop</a>
+            <a href="./java-do-while.html">Java- do-while </a>
+            <a href="./java-for-loop.html">Java- for loop</a>
+            <a href="./java-nested-for-loop.html">Java- Nested for </a>
+            <a href="./java-enhanced-for-loop.html">Java- Enhanced for loop</a>
+            <a href="./java-break-and-continue-statement.html">Java- break &amp; continue</a>
+            <a href="./java-labeled-loops.html">Java- labeled loop</a>
+
+            <div class="menu-head">Array</div>
+            <a href="./java-arrays.html">Java- 1D array</a>
+            <a href="./java-two-dimensional-array.html">Java- 2D array</a>
+            <a href="./java-multi-dimensional-array.html">Java- Multi-Dimensional array</a>
+            <a href="./java-array-length.html">Java- Array Length Variable</a>
+            <a href="./java-arraylist.html">Java- Array List</a>
+            <a href="./java-vectors.html">Java- Vector</a>
+
+            <div class="menu-head">String Handling</div>
+            <a href="./java-strings.html">Java- Strings</a>
+            <a href="./java-String-Buffer.html">Java- String Buffer</a>
+            <a href="./java-string-builder.html">Java- String Builder</a>
+            <a href="./java-length-method.html">Java- String length()</a>
+            <a href="./java-string-handling-methods.html">Java- String Handling Methods</a>
+            <hr>
+            <hr>
+            <a href="./java-wrapper-classes.html">Java- Wrapper Classes</a>
+            <a href="./java-enumerated-type.html">Java- Enumerated Type</a>
+
+            <div class="menu-head">User Inputs</div>
+            <a href="./java-scanner-class.html">Java- Scanner class</a>
+            <a href="./java-buffered-reader.html">Java- BufferedReader class</a>
+            <a href="./java-data-input-stream.html">Java- DataInputStream class</a>
+
+            <div class="menu-head">class, object &amp; methods</div>
+            <a href="./java-what-is-class.html">Java- what is class</a>
+            <a href="./java-what-is-object.html">Java- what is object</a>
+            <a href="./java-constructors.html">Java- what is Constructor</a>
+            <a href="./java-parameterized-constructor.html">Java- Parameterized Constructor</a>
+            <a href="./java-constructor-overloading.html">Java- Constructor Overloading</a>
+            <a href="./java-what-is-method.html">Java- what is method</a>
+            <a href="./java-passing-object-to-method.html">Java- Passing Object to Method</a>
+            <a href="./java-method-overloading.html">Java- Method Overloading</a>
+            <a href="./java-recursion-of-methods.html">Java- Recursion of methods</a>
+            <a href="./java-nesting-of-methods.html">Java- Nesting of Methods</a>
+            <a href="./java-call-by-value.html">Java- Call by value</a>
+            <a href="./java-call-by-reference.html">Java- Call by Reference</a>
+            <a href="./java-static-class-members.html">Java- Static Class members</a>
+            <a href="./java-inner-class.html">Java- Inner Class</a>
+
+            <div class="menu-head">Inheritance</div>
+            <a href="./java-inheritance-basics.html">Java- Inheritance Basics</a>
+            <a href="./java-super-keyword.html">Java- Super Keyword</a>
+            <a href="./java-method-overriding.html">Java- Method Overriding</a>
+            <a href="./java-final-keyword.html">Java- Final Keyword</a>
+            <a href="./java-abstract-method-classes.html">Java- Abstract Method &amp; Class</a>
+            <a href="./java-access-specifier.html">Java- Access Specifier</a>
+
+            <div class="menu-head">Package &amp; Interface</div>
+            <a href="./java-package-basics.html">Java- Package Basics</a>
+            <a href="./java-importing-package.html">Java- Importing Packages</a>
+            <a href="./java-interface-basics.html">Java- Interface Basics</a>
+            <a href="./java-implementing-and-extending-interfaces.html" id="active">Java- implementing &amp; extending interfaces</a>
+
+            <div class="menu-head">Multi-Threading</div>
+            <a href="./java-what-is-thread.html">Java- What is Thread &#63;</a>
+            <a href="./java-creating-threads.html">Java- Creating Threads</a>
+            <a href="./java-thread-priority-and-synchronization.html">Java- Thread Priority &amp; Synchronization</a>
+
+            <div class="menu-head">Exception Handling</div>
+            <a href="./java-fundamentals-of-exception.html">Java- Fundamentals of Exception</a>
+            <a href="./java-try-catch-block.html">Java- Using Try &amp; Catch Block</a>
+            <a href="./java-multiple-catch-blocks.html">Java- Multiple Catch Blocks</a>
+            <a href="./java-nested-try-block.html">Java- Nested Try Blocks</a>
+            <a href="./java-throw-throws-finally-keyword.html">Java- Throw,Throws &amp; Finally</a>
+            <a href="./java-creating-exception-sub-class.html">Java- Creating Exception Sub class</a>
+
+        </div>
+
+    </div>
+    <!--OPAQUE-->
+    <div class="opaque" id="opaque-id" onclick="opaqueClick()"></div>
+
+
+    <!--TOP-NAV-FIXED-->
+    <div class="top-nav">
+        <div class="top-item" id="bars" onclick="barClick()" title="Menu"><i class="fas fa-bars"></i></div>
+        <a class="top-item" href="../index.html" title="Home">Home</a>
+        <a class="top-item" href="./java.html" title="Java Programming">Java Programming</a>
+
+        <!--
+        <div class="dropdown top-item"><span>Menu</span> <i class="fas fa-caret-down"></i>
+            <div class="drop-content">
+                <a href="#">Java</a>
+                <a href="#">Python</a>
+                <a href="#">C++</a>
+                <a href="#">C</a>
+            </div>
+        </div>
+-->
+    </div>
+
+    <!--MAIN-WRAPPER-->
+    <div class="main-wrapper">
+
+
+        <!--HEADER-->
+        <div class="header"><span style="color: #3b5998;">Rapid</span><span style="color:  #e60000">Tutor</span><span>.org</span></div>
+
+
+
+
+        <!--WRAPPER-->
+        <div class="wrapper">
+
+
+            <!--MAIN-->
+
+            <div class="main">
+                <br>
+                <h1>Implementing Interfaces</h1>
+                <p><span class="coral">implements</span> keyword is used to implement the interfaces.</p>
+                <p>Interfaces are used for multiple inheritance in java.</p>
+                <p>In java, we can't extend more than one class but can implement many interfaces along side the class extension.</p>
+                <br>
+                <h4>Syntax:</h4>
+                <pre class="output">
+  class A implements interface_name{
+        ...
+  }          </pre>
+                <br>
+                <p>We can extend one class &amp; implement interface at the same time.</p>
+                <pre class="output">
+  class A extends classB implements interfaceA{
+        ...
+  }          </pre>
+                <br>
+                <br>
+
+                <p>Number of interfaces can be implemented by separating them with commas.</p>
+                <pre class="output">
+class A extends B implements interA,interB,interC{
+        ...            
+ }         </pre>
+                <br>
+                <br>
+                <h4>Program:</h4>
+                <p>In this program we create an interface, implement it to a class &amp; define its methods functionality and access them with objects.</p>
+                <pre class="code prettyprint linenums=1">
+interface InterA{   
+   int x=10;       //interface field
+   void display();     //abstract method
+}
+
+class Test implements InterA{
+
+  //overriding interface method
+  public void display(){   
+      System.out.println("Interface field Value: "+x);
+      System.out.println("Interface overridden method ");
+  }
+
+  public static void main(String[] args) {
+      Test t = new Test();
+      t.display();
+  }
+}        </pre>
+
+                <h4>Output:</h4>
+                <pre class="output">
+  Interface field Value: 10
+  Interface overridden method     </pre>
+
+                <br>
+
+                <p>Here, we've created interface <b>InterA</b>, which has one variable &amp; one abstract method.</p>
+                <p>The interface is implemented by class <b>Test</b> which defined the functionality of <b>display()</b> method.</p>
+                <p>Then, using the Test object <b>t</b> called the display() method.</p>
+                <br>
+                <br>
+                <h2>Extending Interfaces:</h2>
+                <p>An interface can extend an already existing interface by the <span class="coral">extends</span> keyword.</p>
+                <p>The interface which extending the existing interface derives abstract methods &amp; fields from the existing interface. so, any class implementing the interface has to define all the methods from both the interfaces.</p>
+
+                <br>
+                <h4>Syntax:</h4>
+                <pre class="output">
+  interface InterB extends InterA{
+       ...
+  }         </pre>
+
+                <p>Here, interface <b>InterB</b> extends all the methods from interface <b>InterA</b>.</p><br>
+                <br>
+                <h4>Program:</h4>
+                <p>In this program, we'll extend an interface from another interface.</p>
+                <pre class="code prettyprint linenums=1">
+interface InterA{    
+     void methodA();     
+}
+interface InterB extends InterA{  //extending interface
+    void methodB();
+}
+
+class Test implements InterB{
+
+    //overriding both interface methods
+    public void methodA(){   
+        System.out.println("This is method A ");
+    }
+
+    public void methodB(){
+        System.out.println("This is method B");
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.methodA();
+        t.methodB();
+    }
+}   </pre>
+                <h4>Output:</h4>
+                <pre class="output">
+   This is method A
+   This is method B       </pre>
+
+                <p>Here, class <b>Test</b> has to define both the methods from interface <b>InterA</b> &amp; <b>InterB</b> because class Test has implemented the interface InterB which also extends another interface InterA.</p><br>
+                <h2>Default Method in Interface:</h2>
+                <br>
+                <p>We know that interfaces can only have abstract methods but it is possible to have method body by declaring a method as default.</p>
+                <p>To make a method default simply the keyword <span class="coral">default</span> is used.</p>
+                <br>
+                <h4>Syntax:</h4>
+                <pre class="output">
+  default void disp(){...}        </pre><br>
+                <br>
+                <h4>Program:</h4>
+                <p>In this program, we'll create a default method inside interface.</p>
+                <pre class="code prettyprint linenums=1">
+interface A {
+    default void disp(){  //default method
+        System.out.println("default method in interface");
+    }
+}
+
+class Test implements A{
+    public static void main(String[] args) {
+        new Test().disp();
+    }
+}           </pre>
+
+                <h4>Output:</h4>
+                <pre class="output">
+  default method in interface       </pre>
+
+
+                <p>Here, the interface <b>A</b> has a default method <b>disp()</b> with method body.</p>
+                <br>
+                <h2>Static method in Interface:</h2>
+                <p>Interface can have static method with method body.</p>
+                <p>static methods are created with <span class="coral">static</span> keyword.</p>
+                <h4>Syntax:</h4>
+                <pre class="output">
+  static void disp(){...}         </pre>
+                <br>
+
+                <h4>Program:</h4>
+                <p>In this example program we'll create a static method inside interface &amp; then access it with <b>"Interface_Name.method_name"</b> just like any static class memeber. </p>
+                <pre class="code prettyprint linenums=1">
+interface A {
+    static void disp(){  //static method
+        System.out.println("static method in interface");
+    }
+}
+
+class Test implements A{
+    public static void main(String[] args) {
+        A.disp();
+    }
+}           </pre>
+
+                <h4>Output:</h4>
+                <pre class="output">
+  static method in interface       </pre>
+
+                <br>
+                <br>
+
+
+
+
+
+
+
+
+
+
+                <div class="next-prev">
+
+                    <a href="./java-interface-basics.html" class="f-left">prev</a>
+                    <a href="./java-what-is-thread.html" class="f-right">next</a>
+                </div>
+
+                <div class="main-bottom">
+                </div>
+
+            </div>
+
+
+
+            <!--RIGHT-SIDE-->
+            <div class="right-side">Right Side</div>
+        </div>
+
+        <!--FOOTER-->
+        <div class="footer" style="position: relative;">
+
+            <div class="f1">
+                <a href="https://www.facebook.com/RapidTutor-106765660738888/" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/rapid_tutor" title="twitter"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCosYCHGwVdMLOQmmuXKxNgQ?view_as=subscriber" title="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="f2">
+                <a href="../index.html" title="Home">Home</a> |
+                <a href="../about/about.html" title="About">about</a> |
+                <a href="../contact/contact.html" title="Contact">contact</a> |
+                <a href="../privacy_policy/privacy_policy.html" title="privacy policy">privacy policy</a> |
+                <a href="../Terms_Of_Use/terms_of_use.html" title="terms of use">terms of use</a>
+            </div>
+            <div class="f3">
+                &copy; Copyright 2019 | rapidtutor.org | All Rights Reserved
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body></html>

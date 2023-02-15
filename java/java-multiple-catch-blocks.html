@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Java Multiple Catch Blocks - RapidTutor</title>
+
+    <meta name="Keywords" content="Java,programming,tutorial,rapidtutor,examples,tutor,rapid,learn,syntax,multiple,catch,block,try">
+
+    <meta name="Description" content="try block can have multiple catch blocks immediately following it.Multiple catch blocks used when the code inside the try block can generate different type of Exception Object.The catch Block to handle the generated exception is decided based on the type of exception it takes as argument.">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  *****************  icon ******************* -->
+
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <!-- ******************* font ********* -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!-- **************  pretty-print *********** -->
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=java&amp;skin=sons-of-obsidian"></script>
+
+    <!-- ******************   sheets ************** -->
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+
+
+
+</head>
+
+<body>
+    <!--***************   SIDE-NAV     ************ -->
+
+    <div class="side-nav" id="side-id">
+
+        <div class="side-head">Java Tutorial</div>
+        <div class="side-content">
+            <a href="./java.html">Java-About</a>
+            <a href="./java-features.html">Java-Features</a>
+            <a href="./Oop-features.html">Java-Oop features</a>
+            <a href="./java-setup-environment.html">Java-Set up environment</a>
+            <a href="./simple-java-code.html">Java-A simple java code</a>
+            <a href="./java-program-structure.html">Java-Program Structure</a>
+            <a href="./java-public-static-void-main.html">Java-public static void main()</a>
+            <a href="./system.out.println-explained.html">Java-System.out.println()</a>
+            <a href="./java-tokens.html">Java-Tokens</a>
+            <a href="./java-data-types.html">Java-Data Types</a>
+            <a href="./java-variables-and-classification.html">Java-Variables &amp; classification</a>
+            <a href="./java-naming-convention.html">Java-Naming Convention</a>
+            <a href="./java-type-casting.html">Java-Type Casting</a>
+
+            <div class="menu-head">Branching Statements</div>
+            <a href="./java-if-statement.html">Java- if Statement</a>
+            <a href="./java-if-else-statement.html">Java- if-else</a>
+            <a href="./java-nested-if-else.html">Java- nested if-else</a>
+            <a href="./java-else-if-ladder.html">Java- else-if ladder</a>
+            <a href="./java-switch-statement.html">Java- switch statement</a>
+            <a href="./java-ternary-operator.html">Java- Ternary Operator</a>
+
+            <div class="menu-head">Loop Statements</div>
+            <a href="./java-while-loop.html">Java- while loop</a>
+            <a href="./java-do-while.html">Java- do-while </a>
+            <a href="./java-for-loop.html">Java- for loop</a>
+            <a href="./java-nested-for-loop.html">Java- Nested for </a>
+            <a href="./java-enhanced-for-loop.html">Java- Enhanced for loop</a>
+            <a href="./java-break-and-continue-statement.html">Java- break &amp; continue</a>
+            <a href="./java-labeled-loops.html">Java- labeled loop</a>
+
+            <div class="menu-head">Array</div>
+            <a href="./java-arrays.html">Java- 1D array</a>
+            <a href="./java-two-dimensional-array.html">Java- 2D array</a>
+            <a href="./java-multi-dimensional-array.html">Java- Multi-Dimensional array</a>
+            <a href="./java-array-length.html">Java- Array Length Variable</a>
+            <a href="./java-arraylist.html">Java- Array List</a>
+            <a href="./java-vectors.html">Java- Vector</a>
+
+            <div class="menu-head">String Handling</div>
+            <a href="./java-strings.html">Java- Strings</a>
+            <a href="./java-String-Buffer.html">Java- String Buffer</a>
+            <a href="./java-string-builder.html">Java- String Builder</a>
+            <a href="./java-length-method.html">Java- String length()</a>
+            <a href="./java-string-handling-methods.html">Java- String Handling Methods</a>
+            <hr>
+            <hr>
+            <a href="./java-wrapper-classes.html">Java- Wrapper Classes</a>
+            <a href="./java-enumerated-type.html">Java- Enumerated Type</a>
+
+            <div class="menu-head">User Inputs</div>
+            <a href="./java-scanner-class.html">Java- Scanner class</a>
+            <a href="./java-buffered-reader.html">Java- BufferedReader class</a>
+            <a href="./java-data-input-stream.html">Java- DataInputStream class</a>
+
+            <div class="menu-head">class, object &amp; methods</div>
+            <a href="./java-what-is-class.html">Java- what is class</a>
+            <a href="./java-what-is-object.html">Java- what is object</a>
+            <a href="./java-constructors.html">Java- what is Constructor</a>
+            <a href="./java-parameterized-constructor.html">Java- Parameterized Constructor</a>
+            <a href="./java-constructor-overloading.html">Java- Constructor Overloading</a>
+            <a href="./java-what-is-method.html">Java- what is method</a>
+            <a href="./java-passing-object-to-method.html">Java- Passing Object to Method</a>
+            <a href="./java-method-overloading.html">Java- Method Overloading</a>
+            <a href="./java-recursion-of-methods.html">Java- Recursion of methods</a>
+            <a href="./java-nesting-of-methods.html">Java- Nesting of Methods</a>
+            <a href="./java-call-by-value.html">Java- Call by value</a>
+            <a href="./java-call-by-reference.html">Java- Call by Reference</a>
+            <a href="./java-static-class-members.html">Java- Static Class members</a>
+            <a href="./java-inner-class.html">Java- Inner Class</a>
+
+            <div class="menu-head">Inheritance</div>
+            <a href="./java-inheritance-basics.html">Java- Inheritance Basics</a>
+            <a href="./java-super-keyword.html">Java- Super Keyword</a>
+            <a href="./java-method-overriding.html">Java- Method Overriding</a>
+            <a href="./java-final-keyword.html">Java- Final Keyword</a>
+            <a href="./java-abstract-method-classes.html">Java- Abstract Method &amp; Class</a>
+            <a href="./java-access-specifier.html">Java- Access Specifier</a>
+
+            <div class="menu-head">Package &amp; Interface</div>
+            <a href="./java-package-basics.html">Java- Package Basics</a>
+            <a href="./java-importing-package.html">Java- Importing Packages</a>
+            <a href="./java-interface-basics.html">Java- Interface Basics</a>
+            <a href="./java-implementing-and-extending-interfaces.html">Java- implementing &amp; extending interfaces</a>
+
+            <div class="menu-head">Multi-Threading</div>
+            <a href="./java-what-is-thread.html">Java- What is Thread &#63;</a>
+            <a href="./java-creating-threads.html">Java- Creating Threads</a>
+            <a href="./java-thread-priority-and-synchronization.html">Java- Thread Priority &amp; Synchronization</a>
+
+            <div class="menu-head">Exception Handling</div>
+            <a href="./java-fundamentals-of-exception.html">Java- Fundamentals of Exception</a>
+            <a href="./java-try-catch-block.html">Java- Using Try &amp; Catch Block</a>
+            <a href="./java-multiple-catch-blocks.html" id="active">Java- Multiple Catch Blocks</a>
+            <a href="./java-nested-try-block.html">Java- Nested Try Blocks</a>
+            <a href="./java-throw-throws-finally-keyword.html">Java- Throw,Throws &amp; Finally</a>
+            <a href="./java-creating-exception-sub-class.html">Java- Creating Exception Sub class</a>
+
+        </div>
+
+    </div>
+    <!--**************    OPAQUE   ************* -->
+
+    <div class="opaque" id="opaque-id" onclick="opaqueClick()"></div>
+
+
+    <!-- *************   TOP-NAV-FIXED    ********** -->
+
+    <div class="top-nav">
+        <div class="top-item" id="bars" onclick="barClick()" title="Menu"><i class="fas fa-bars"></i></div>
+        <a class="top-item" href="../index.html" title="Home">Home</a>
+        <a class="top-item" href="./java.html" title="Java Programming">Java Programming</a>
+
+        <!--
+        <div class="dropdown top-item"><span>Menu</span> <i class="fas fa-caret-down"></i>
+            <div class="drop-content">
+                <a href="#">Java</a>
+                <a href="#">Python</a>
+                <a href="#">C++</a>
+                <a href="#">C</a>
+            </div>
+        </div>
+-->
+    </div>
+    <!--  *************     MAIN-WRAPPER   ******** -->
+
+
+    <div class="main-wrapper">
+
+
+        <!--  ***********      HEADER  *********    -->
+
+        <div class="header"><span style="color: #3b5998;">Rapid</span><span style="color:  #e60000">Tutor</span><span>.org</span></div>
+
+
+
+
+        <!--  ***********     WRAPPER    **********  -->
+
+        <div class="wrapper">
+
+
+            <!--  ***********    MAIN     ********** -->
+
+
+            <div class="main">
+                <br>
+                <h1>Multiple <span class="coral">catch</span> Blocks in Java</h1>
+                <p>A <b>try</b> block can have one or multiple <b>catch</b> blocks immediately following it.</p>
+                <p>Multiple catch statements used when the codes inside the try block can generate different type of Exception Object.</p>
+                <br>
+                <p>The catch Block to handle the generated exception is decided based on the type of exception Object it takes as argument.</p>
+                <br>
+
+                <br>
+                <h4>Syntax:</h4>
+                <pre class="output">
+  try{...
+  }
+  catch(Exception_type-1 e){
+  }
+  catch(Exception_type-2 e){
+  }
+  catch(Exception_type-3 e){
+  }
+  ...
+  catch(Exception_type-N e){
+  }         </pre>
+
+
+                <p>Those catch blocks are arranged from more specific type to more general type, so that we can take more suitable action based on the type of exception.</p>
+                <br><br>
+
+                <h4>Ex. Program:</h4>
+                <pre class="code prettyprint linenums=1">
+class Test{
+  public static void main(String[] args) {
+
+  int ar[]={1,2,3};
+
+  try{            //try block
+    int a= ar[1]/0;
+    int b= ar[5];
+  }
+
+  catch(ArithmeticException e){//More specific catch block
+    System.err.println("Arithmetic Exception");
+  }
+   
+  catch(ArrayIndexOutOfBoundsException e){
+    System.out.println("Array Index Out Of Bounds Exception");
+  }
+
+  catch(Exception e){   //General catch block
+    System.out.println("General Exception Object");
+  }
+
+  System.out.println("Code Executed After Exception Handling");
+  }
+
+}      </pre>
+
+                <h4>Output:</h4>
+                <pre class="output">
+  Arithmetic Exception
+  Code Executed After Exception Handling </pre>
+
+                <p>Here, inside the try block we've two statements, in real time scenario both of them can generate different type of exception at runtime.</p>
+                <br>
+                <p>So, inorder to Handle those possible exceptions we've more specific catch block after try block followed by more general catch blocks.</p>
+                <br>
+                <p>Here, the first exception (<b>Divided By Zero</b>) is handled by the <b>ArithmeticException</b> type catch block, After that the last statement is executed without program termination, as the generated exception is Handled.</p>
+                <br><br>
+
+
+
+
+
+
+
+
+
+
+                <div class="next-prev">
+
+                    <a href="./java-try-catch-block.html" class="f-left">prev</a>
+                    <a href="./java-nested-try-block.html" class="f-right">next</a>
+                </div>
+
+                <div class="main-bottom">
+                </div>
+
+            </div>
+
+
+
+            <!-- *********    RIGHT-SIDE   ******** -->
+
+            <div class="right-side">Right Side</div>
+        </div>
+
+        <!--  **********    FOOTER   ***********   -->
+
+        <div class="footer" style="position: relative;">
+
+            <div class="f1">
+                <a href="https://www.facebook.com/RapidTutor-106765660738888/" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/rapid_tutor" title="twitter"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCosYCHGwVdMLOQmmuXKxNgQ?view_as=subscriber" title="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="f2">
+                <a href="../index.html" title="Home">Home</a> |
+                <a href="../about/about.html" title="About">about</a> |
+                <a href="../contact/contact.html" title="Contact">contact</a> |
+                <a href="../privacy_policy/privacy_policy.html" title="privacy policy">privacy policy</a> |
+                <a href="../Terms_Of_Use/terms_of_use.html" title="terms of use">terms of use</a>
+            </div>
+            <div class="f3">
+                &copy; Copyright 2019 | rapidtutor.org | All Rights Reserved
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body></html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Java Access Specifiers or Modifiers - RapidTutor</title>
+
+    <meta name="Keywords" content="Java,programming,tutorial,rapidtutor,examples,tutor,rapid,access specifier,access modifier,public,protected,default,friendly,private">
+
+    <meta name="Description" content="Access specifiers or access modifiers are used to control the visibility of class, constructor, variable & methods,like- public,protected,default,private-protected,private etc.">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  *****************  icon ******************* -->
+
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <!-- ******************* font ********* -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!-- **************  pretty-print *********** -->
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=java&amp;skin=sons-of-obsidian"></script>
+
+    <!-- ******************   sheets ************** -->
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+
+
+</head>
+
+<body>
+    <!--SIDE-NAV-->
+    <div class="side-nav" id="side-id">
+
+        <div class="side-head">Java Tutorial</div>
+        <div class="side-content">
+            <a href="./java.html">Java-About</a>
+            <a href="./java-features.html">Java-Features</a>
+            <a href="./Oop-features.html">Java-Oop features</a>
+            <a href="./java-setup-environment.html">Java-Set up environment</a>
+            <a href="./simple-java-code.html">Java-A simple java code</a>
+            <a href="./java-program-structure.html">Java-Program Structure</a>
+            <a href="./java-public-static-void-main.html">Java-public static void main()</a>
+            <a href="./system.out.println-explained.html">Java-System.out.println()</a>
+            <a href="./java-tokens.html">Java-Tokens</a>
+            <a href="./java-data-types.html">Java-Data Types</a>
+            <a href="./java-variables-and-classification.html">Java-Variables &amp; classification</a>
+            <a href="./java-naming-convention.html">Java-Naming Convention</a>
+            <a href="./java-type-casting.html">Java-Type Casting</a>
+
+            <div class="menu-head">Branching Statements</div>
+            <a href="./java-if-statement.html">Java- if Statement</a>
+            <a href="./java-if-else-statement.html">Java- if-else</a>
+            <a href="./java-nested-if-else.html">Java- nested if-else</a>
+            <a href="./java-else-if-ladder.html">Java- else-if ladder</a>
+            <a href="./java-switch-statement.html">Java- switch statement</a>
+            <a href="./java-ternary-operator.html">Java- Ternary Operator</a>
+
+            <div class="menu-head">Loop Statements</div>
+            <a href="./java-while-loop.html">Java- while loop</a>
+            <a href="./java-do-while.html">Java- do-while </a>
+            <a href="./java-for-loop.html">Java- for loop</a>
+            <a href="./java-nested-for-loop.html">Java- Nested for </a>
+            <a href="./java-enhanced-for-loop.html">Java- Enhanced for loop</a>
+            <a href="./java-break-and-continue-statement.html">Java- break &amp; continue</a>
+            <a href="./java-labeled-loops.html">Java- labeled loop</a>
+
+            <div class="menu-head">Array</div>
+            <a href="./java-arrays.html">Java- 1D array</a>
+            <a href="./java-two-dimensional-array.html">Java- 2D array</a>
+            <a href="./java-multi-dimensional-array.html">Java- Multi-Dimensional array</a>
+            <a href="./java-array-length.html">Java- Array Length Variable</a>
+            <a href="./java-arraylist.html">Java- Array List</a>
+            <a href="./java-vectors.html">Java- Vector</a>
+
+            <div class="menu-head">String Handling</div>
+            <a href="./java-strings.html">Java- Strings</a>
+            <a href="./java-String-Buffer.html">Java- String Buffer</a>
+            <a href="./java-string-builder.html">Java- String Builder</a>
+            <a href="./java-length-method.html">Java- String length()</a>
+            <a href="./java-string-handling-methods.html">Java- String Handling Methods</a>
+            <hr>
+            <hr>
+            <a href="./java-wrapper-classes.html">Java- Wrapper Classes</a>
+            <a href="./java-enumerated-type.html">Java- Enumerated Type</a>
+
+            <div class="menu-head">User Inputs</div>
+            <a href="./java-scanner-class.html">Java- Scanner class</a>
+            <a href="./java-buffered-reader.html">Java- BufferedReader class</a>
+            <a href="./java-data-input-stream.html">Java- DataInputStream class</a>
+
+            <div class="menu-head">class, object &amp; methods</div>
+            <a href="./java-what-is-class.html">Java- what is class</a>
+            <a href="./java-what-is-object.html">Java- what is object</a>
+            <a href="./java-constructors.html">Java- what is Constructor</a>
+            <a href="./java-parameterized-constructor.html">Java- Parameterized Constructor</a>
+            <a href="./java-constructor-overloading.html">Java- Constructor Overloading</a>
+            <a href="./java-what-is-method.html">Java- what is method</a>
+            <a href="./java-passing-object-to-method.html">Java- Passing Object to Method</a>
+            <a href="./java-method-overloading.html">Java- Method Overloading</a>
+            <a href="./java-recursion-of-methods.html">Java- Recursion of methods</a>
+            <a href="./java-nesting-of-methods.html">Java- Nesting of Methods</a>
+            <a href="./java-call-by-value.html">Java- Call by value</a>
+            <a href="./java-call-by-reference.html">Java- Call by Reference</a>
+            <a href="./java-static-class-members.html">Java- Static Class members</a>
+            <a href="./java-inner-class.html">Java- Inner Class</a>
+
+            <div class="menu-head">Inheritance</div>
+            <a href="./java-inheritance-basics.html">Java- Inheritance Basics</a>
+            <a href="./java-super-keyword.html">Java- Super Keyword</a>
+            <a href="./java-method-overriding.html">Java- Method Overriding</a>
+            <a href="./java-final-keyword.html">Java- Final Keyword</a>
+            <a href="./java-abstract-method-classes.html">Java- Abstract Method &amp; Class</a>
+            <a href="./java-access-specifier.html" id="active">Java- Access Specifier</a>
+
+            <div class="menu-head">Package &amp; Interface</div>
+            <a href="./java-package-basics.html">Java- Package Basics</a>
+            <a href="./java-importing-package.html">Java- Importing Packages</a>
+            <a href="./java-interface-basics.html">Java- Interface Basics</a>
+            <a href="./java-implementing-and-extending-interfaces.html">Java- implementing &amp; extending interfaces</a>
+
+            <div class="menu-head">Multi-Threading</div>
+            <a href="./java-what-is-thread.html">Java- What is Thread &#63;</a>
+            <a href="./java-creating-threads.html">Java- Creating Threads</a>
+            <a href="./java-thread-priority-and-synchronization.html">Java- Thread Priority &amp; Synchronization</a>
+
+            <div class="menu-head">Exception Handling</div>
+            <a href="./java-fundamentals-of-exception.html">Java- Fundamentals of Exception</a>
+            <a href="./java-try-catch-block.html">Java- Using Try &amp; Catch Block</a>
+            <a href="./java-multiple-catch-blocks.html">Java- Multiple Catch Blocks</a>
+            <a href="./java-nested-try-block.html">Java- Nested Try Blocks</a>
+            <a href="./java-throw-throws-finally-keyword.html">Java- Throw,Throws &amp; Finally</a>
+            <a href="./java-creating-exception-sub-class.html">Java- Creating Exception Sub class</a>
+
+        </div>
+
+    </div>
+
+    <!--OPAQUE-->
+    <div class="opaque" id="opaque-id" onclick="opaqueClick()"></div>
+
+
+    <!--TOP-NAV-FIXED-->
+    <div class="top-nav">
+        <div class="top-item" id="bars" onclick="barClick()" title="Menu"><i class="fas fa-bars"></i></div>
+        <a class="top-item" href="../index.html" title="Home">Home</a>
+        <a class="top-item" href="./java.html" title="Java Programming">Java Programming</a>
+
+        <!--
+        <div class="dropdown top-item"><span>Menu</span> <i class="fas fa-caret-down"></i>
+            <div class="drop-content">
+                <a href="#">Java</a>
+                <a href="#">Python</a>
+                <a href="#">C++</a>
+                <a href="#">C</a>
+            </div>
+        </div>
+-->
+    </div>
+
+    <!--MAIN-WRAPPER-->
+    <div class="main-wrapper">
+
+
+        <!--HEADER-->
+        <div class="header"><span style="color: #3b5998;">Rapid</span><span style="color:  #e60000">Tutor</span><span>.org</span></div>
+
+
+
+
+        <!--WRAPPER-->
+        <div class="wrapper">
+
+
+            <!--MAIN-->
+
+            <div class="main">
+                <br>
+                <h1>Access Specifier in Java</h1>
+                <p>Sometimes it is necessary to have access restrictions to stop misuse and improve security of members.</p>
+                <p><b>Access specifiers</b> are used to control the visibility of class, constructor , variable &amp; methods. </p>
+                <br>
+                <p>Java has five types of access specifiers:</p>
+                <ul class="bullets">
+                    <li>public</li>
+                    <li>protected</li>
+                    <li>default or friendly</li>
+                    <li>private protected</li>
+                    <li>private</li>
+                </ul>
+                <br>
+                <p>The scope of these modifiers shown in table-</p>
+
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>Location</th>
+                            <th>public</th>
+                            <th>protected</th>
+                            <th>default</th>
+                            <th>private-protected</th>
+                            <th>private</th>
+                        </tr>
+                        <tr>
+                            <td>same class</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>sub-class in same package</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>other class in same package</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>no</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>sub class in other package</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>no</td>
+                            <td>yes</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>non-subclass in other package</td>
+                            <td>yes</td>
+                            <td>no</td>
+                            <td>no</td>
+                            <td>no</td>
+                            <td>no</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+
+                <h3><b>public:</b></h3>
+                <p><span class="coral">public</span> access specifier has the widest visibility among all the specifiers.</p>
+                <p>Members with public visibility is accessible from everywhere.</p>
+                <br>
+                <h4>Syntax:</h4>
+                <pre class="output">
+  public int number;
+  public void display(){...} </pre>
+                <br>
+
+                <h3><b>protected:</b></h3>
+                <p>Members with <span class="coral">protected</span> visibility can be accessed from within the same package &amp; also from subclass of other packages.</p>
+                <h4>Syntax:</h4>
+                <pre class="output">
+  protected int number;
+  protected void display(){...} </pre>
+
+                <br>
+
+                <h3><b>default:</b></h3>
+                <p>When no access specifiers are specified that is taken as <b>default</b> specifier.</p>
+                <p>The visibility of default specifier lies within the same package so, it is also known as <b>package friendly</b> or <b>friendly</b> access specifier.</p>
+                <h4>Syntax:</h4>
+                <pre class="output">
+   int number;
+   void display(){...}   </pre>
+
+                <br>
+
+                <h3><b>private protected:</b></h3>
+                <p>A specifier with both the keyword <span class="coral">private</span> &amp; <span class="coral">protected</span> can be used together to have a visibility in between the private &amp; protected visibility.</p>
+                <p>Members with this visibility can be accessible within same class &amp; also in all the sub-classes.</p>
+                <br>
+
+                <h3><b>Private:</b></h3>
+                <p><span class="coral">private</span> is the most restricted specifier among all of them.</p>
+                <p>Members with <b>private</b> visibility can only be accessed from within the class.</p>
+                <h4>Syntax:</h4>
+                <pre class="output">
+  private int Id;
+  private void show(){...}  </pre>
+                <br><br>
+
+
+
+
+
+
+
+
+
+                <div class="next-prev">
+
+                    <a href="./java-abstract-method-classes.html" class="f-left">prev</a>
+                    <a href="./java-package-basics.html" class="f-right">next</a>
+                </div>
+
+                <div class="main-bottom">
+                </div>
+
+            </div>
+
+
+
+            <!--RIGHT-SIDE-->
+            <div class="right-side">Right Side</div>
+        </div>
+
+        <!--FOOTER-->
+        <div class="footer" style="position: relative;">
+
+            <div class="f1">
+                <a href="https://www.facebook.com/RapidTutor-106765660738888/" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/rapid_tutor" title="twitter"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCosYCHGwVdMLOQmmuXKxNgQ?view_as=subscriber" title="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="f2">
+                <a href="../index.html" title="Home">Home</a> |
+                <a href="../about/about.html" title="About">about</a> |
+                <a href="../contact/contact.html" title="Contact">contact</a> |
+                <a href="../privacy_policy/privacy_policy.html" title="privacy policy">privacy policy</a> |
+                <a href="../Terms_Of_Use/terms_of_use.html" title="terms of use">terms of use</a>
+            </div>
+            <div class="f3">
+                &copy; Copyright 2019 | rapidtutor.org | All Rights Reserved
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body></html>
